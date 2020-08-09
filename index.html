@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            input[type=text] {
+                width: 430px;
+            }
+            a:link {
+                text-decoration: none;
+                color: rgba(100, 100, 100);
+            }
+            a:visited {
+                color: rgba(75, 75, 75);
+            }
+            a:hover {
+                text-decoration: underline;
+                color:rgba(53, 53, 53);
+            }
+            .headercontainer {
+                display: flex;
+                background-color: white;
+                width: auto;
+                height: 3rem;
+            }
+            .infolinkgroup {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                height: 3rem;
+                justify-content: flex-start;
+            }
+            .accountinfogroup {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+                height: 3rem;
+                justify-content: flex-end;
+            }
+            
+            .googleinfolinks {
+                padding: 10px;
+                text-align: center;
+                font-size: 12px;
+            }
+            .accountinfolinks {
+                padding: 10px;
+                text-align: center;
+                font-size: 12px;
+            }
+            .logo {
+                display: block;
+                padding-top: 8rem;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;     
+            }
+            .searchbararea {
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                flex-direction:row;
+                justify-content: center;
+            }
+            .searchbar {
+                display: flex;
+                width: 30rem;
+                border: 2px solid rgba(211, 211, 211, .5);
+                border-radius: 30px;
+                justify-content:left;
+                align-content:center;
+            }
+            .searchbar:hover {
+                box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+                border-color: rgba(223,225,229,0);
+            }
+            #textfield {
+                border: 0px none;
+            }
+            #searchsymbol {
+                padding: 6px 2px 2px 6px;
+            }
+            .searchbuttoncontainer {
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                column-gap: 10px;
+            }
+            .buttons {
+            font-size: 14px;
+            color: rgba(100, 100, 100);
+            padding: 5px 10px 5px 10px;
+            border: 2px solid rgba(255, 255, 255);
+            border-radius: 5px;
+            background-color: rgba(241, 241, 241);
+            }
+            .buttons:hover {
+                border: 1px solid rgba(58, 57, 57, 0.5);
+                color: rgba(53, 53, 53);
+            }
+
+
+            .footercontainer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                background-color: white;
+                width: 100%;
+                height: 3rem;
+                align-items:center;
+                background-color: rgba(241, 241, 241)
+            }
+            .businessinfo {
+                display: flex;
+                width: 50%;
+                flex-direction:row;
+                justify-content: left;
+            }
+            .privacyinfo {
+                display: flex;
+                width: 50%;
+                flex-direction:row;
+                justify-content:right;
+            }
+            .businesscards {
+                padding: 10px;
+                text-align: center;
+                font-size: 12px;
+            }
+            .privacycards {
+                padding: 10px;
+                text-align: center;
+                font-size: 12px;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="headercontainer">
+            <div class="infolinkgroup">
+                <div class="googleinfolinks">
+                    <a href="">About</a>
+                </div>
+                <div class="googleinfolinks">
+                    <a href="">Store</a>
+                </div>
+            </div>
+            <div class="accountinfogroup">
+                <div class="accountinfolinks">
+                    <a href="">Gmail</a>
+                </div>
+                <div class="accountinfolinks">
+                    <a href="">Images</a>
+                </div>
+                <div class="accountinfolinks">
+                    <a href=""><i class="material-icons">apps</i></a>
+                </div>
+                <div class="accountinfolinks">
+                    <a href=""><i class="material-icons">donut_small</i></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div>
+            <img class="logo"src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"alt="Google Logo">
+        </div>
+        
+        
+        <div class="searchbararea">
+            <div class="searchbar">
+                <div id="searchsymbol">
+                    <a href=""><i class="material-icons">restore</i></a>
+                </div>
+                <input type="text"id="textfield"placeholder="">
+            </div>
+        </div>
+        
+        
+        <div class="searchbuttoncontainer">
+            <button id="searchingbutton"class="buttons">Google Search
+            </button>
+            <button id="feelingluckybutton"class="buttons">I'm Feeling Lucky
+            </button>
+        </div>
+
+        <div class="footercontainer">
+            <div class="businessinfo">
+                <div class="businesscards">
+                        <a href="">Advertising</a>
+                    </div>
+                <div class="businesscards">
+                        <a href="">Business</a>
+                    </div>
+                <div class="businesscards">
+                        <a href="">How Search works</a>
+                    </div>
+                </div>
+            <div class="privacyinfo">
+                <div class="privacycards">
+                        <a href="">Privacy</a>
+                    </div>
+                <div class="privacycards">
+                        <a href="">Terms</a>
+                    </div>
+                <div class="privacycards">
+                        <a href="">Settings</a>
+                    </div> 
+            </div>
+        </div>
+    </body>
+</html>
